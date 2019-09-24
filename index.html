@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-<title>Index Title</title>
-</head>
+<html lang="en">
 
-<body>
-<h1 style="font-size:40px;">Hello test </h1>
-<hr>
 
-<p style="color:blueviolet">
-    This is my first paragraph and it contains a list! 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>PHP</li>
-    </ul>.
-</p>
-
-<p>
-    <h1>When your website is lame</h1>
-    <img src="C:\Users\Amanuel\Downloads\crying.jpg" alt="Crying mike" >
-</p>
-
-<p>
-    <div>
-    <h5>Programming languages</h5>
-   
-    <table border="1px solid black">
-           
-        <caption>What programming languages feel like</caption>
-        <tr>
-            <th>
-                C
-            </th>
-            <th>
-                Java
-            </th>
-            <th>
-                Assembly
-            </th>
-        </tr>
-        <tr>
-            <td>Sometimes confusing to understand</td>
-            <td>Easy but complicated</td>
-            <td>What is going on here</td>
-        </tr>
-    </table>
+<!--Meta data and head-->
+<div id='metadata'>
+  <head>
+    <link rel="stylesheet" href="indexstyle.css">
+    <meta charset="utf-8">
+    <title>Emmanuel's resume website</title>
+    <meta name='author' content="Emmanuel Mekonnen">
+    <meta name='description' content="This is my personal resume website">
+  </head>
 </div>
-</p>
+
+
+<!--Top level header-->
+<div>
+    <h1 class= 'top-level header' align=center>Emmanuel Mekonnen</h1>
+</div>
+
+
+<!-- Introduction div-->
+<body>
+  <div class = 'About-me'>
+    <div class='Introduction'>
+      <h3 class='Hello'>Hi, my name is Emmanuel and welcome to my website</h1>
+      <img class='image' src="indeximg.jpg"  alt="Hello image">
+      <hr>
+      <div class='intro-paragraph-div'>
+        <p class='intro-paragraph'>
+          Hello my name is Emmanuel Mekonnen and a senior at the University of Maryland. I am interested in software development and data science.
+          In the future, I would like to work in one of  these fields.
+          <br>
+          I created this website for a class assignment and to practice my web-development
+          skills. I will try to update this website with any projects I am working on as much as I can.
+          <br>
+
+          <p id= 'signature'>
+            Emmanuel Mekonnen
+            <br>
+            University of Maryland
+            <br>
+            amekonne@umd.edu
+            <hr>
+          </p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience div-->
+  <div class='experience'>
+    <div class='work-experience'>
+      <h2 class= 'work-experience-header'> Work Experience</h2>
+      <div class = jobs>
+        <h3 class= 'jobs-header'>Java software developer<h2>
+          <p class='job-description'> I was responsible for software analysis, programming, testing and debugging.<br>
+           August 2017-May 2018 </p>
+          <ul>
+            <lh>Responsibilities</lh>
+            <li>Debug code</li>
+            <li>Create java applications</li>
+            <li>Get coffee</li>
+          </ul>
+      </div>
+
+      <div class = jobs>
+          <h3 class= 'jobs-header'>Python software developer <h2>
+            <p class='job-description'>I was responsible for writing and testing code, debugging programs and integrating applications with third-party web services.<br>
+            May 2018-September 2018</p>
+            <ul>
+              <lh>Responsibilities</lh>
+              <li>Debug code</li>
+              <li>Get coffee</li>
+            </ul>
+      </div>
+
+      <div class = jobs>
+        <h3 class= 'jobs-header'>Data analyist<h2>
+          <p class='job-description'> I responsible for the collection, cleaning and munging of data to meet the company's purpose.<br>
+          May 2019-May 2020 </p>
+          <ul>
+            <lh>Responsibilities</lh>
+            <li>Scape the web for data</li>
+            <li>Clean data</li>
+            <li>Create visualizations for the data</li>
+          </ul>
+      </div>
+     </div>
+  </div>
+
+
 </body>
 
 </html>
