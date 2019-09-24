@@ -1,0 +1,59 @@
+body {
+  background-image: url("background.jpg");
+}
+
+ul {
+  list-style-type: circle;
+  font-size: 20px
+}
+
+p {
+  font-family: Verdana, Times, serif;
+}
+
+
+h2.work-experience-header{
+  text-align: center;
+
+}
+h3.Hello{
+  text-align: center;
+  font-size: 21px;
+}
+img.image{
+  text-align: center;
+}
+
+div.experience {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+div.About-me{
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-left: 80px;
+
+}
+div.Introduction{
+  background-image: url('background2.jpg');
+  background-size: cover;
+}
+
+div.intro-paragraph-div{
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+h3.jobs-header{
+  font-size: 21px
+  text-align: left;
+  text-decoration: underline;
+}
+
+p.job-description {
+  text-align: left;
+  font-size: 15px;
+}
