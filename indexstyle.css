@@ -10,7 +10,12 @@ ul {
 p {
   font-family: Verdana, Times, serif;
 }
+div.header{
+  text-align: center;
+  background: black;
+  color: white;
 
+}
 
 h2.work-experience-header{
   text-align: center;
@@ -21,7 +26,9 @@ h3.Hello{
   font-size: 21px;
 }
 img.image{
-  text-align: center;
+  object-fit: fill;
+  object-position: center;
+  height: 380px;
 }
 
 div.experience {
@@ -40,6 +47,7 @@ div.About-me{
 div.Introduction{
   background-image: url('background2.jpg');
   background-size: cover;
+  column-count: 2;
 }
 
 div.intro-paragraph-div{
@@ -51,6 +59,9 @@ h3.jobs-header{
   font-size: 21px
   text-align: left;
   text-decoration: underline;
+  text-indent: 50px;
+  text-transform: capitalize;
+  color: green;
 }
 
 p.job-description {
