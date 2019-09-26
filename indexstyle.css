@@ -39,9 +39,8 @@ div.experience {
 }
 
 div.About-me{
-  padding-top: 10px;
-  padding-right: 50px;
-  padding-left: 80px;
+  width: 60%;
+  margin: 0 auto;
 
 }
 div.Introduction{
