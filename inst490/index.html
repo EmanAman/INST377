@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test Map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" /><![endif]-->
+  <link rel="stylesheet" href="css/MarkerCluster.css" />
+  <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="../dist/MarkerCluster.Default.ie.css" /><![endif]-->
+  <link rel="stylesheet" href="css/leaflet.label.css" />
+  <link rel="stylesheet" href="css/screen.css" />
+  <system.webServer>
+    <httpProtocol>
+      <customHeaders>
+        <add name="Access-Control-Allow-Origin" value="*" />
+        <add name="Access-Control-Allow-Methods" value="GET, POST" />
+      </customHeaders>
+    </httpProtocol>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="list-container">
+      <div id="filter-container">
+        <form class="form-search" class="noSelect" onSubmit="addCsvMarkers(); return false;">
+          <a href="#" id="clear" class="leaflet-popup-close-button">&#215;</a>
+          <div class="input-append">
+            <input type="text" id="filter-string" class="input-medium search-query search-box" autocomplete="off">
+            <button type="submit" class="btn search-box"><i class="icon-search"></i></button>
+            <!-- <span class="add-on">
+                  </span> -->
+          </div>
+        </form>
+        <div id="search-results" class="leaflet-control-attribution leaflet-control pull-right"></div>
+      </div>
+      <div class="filter-display-location">
+        <div class="filter-text"></div>
+        <a class="x-button"></a>
+      </div>
+      <ul id="list"></ul>
+    </div>
+    <div id="mapid"></div>
+  </div>
+
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="js/leaflet.markercluster.js"></script>
+  <script src="js/leaflet.geocsv.js"></script>
+  <script src="js/leaflet.label.js"></script>
+  <script src="configs.js"></script>
+  <script src="js/application.js"></script>
+</body>
+
+</html>
