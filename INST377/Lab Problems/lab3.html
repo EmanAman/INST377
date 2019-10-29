@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sample HTML Demonstration Page</title>
+  <style>
+  /* 
+    Place your fresh CSS styles here to help organize the page
+  */
+  
+body {
+  color: black;
+
+}
+
+.wrapper {
+  width: 66%;
+  height: 100vh;
+  background: grey;
+  margin:0 auto;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  margin: 0;
+  padding: 0;
+  font-size: 42px;
+  font-style: bold;
+  font-weight: 400;
+}
+
+
+.second_container {
+  background: pink;
+  height: 150px;
+  align-content: center;
+  justify-content: center; 
+  display: flex;
+
+}
+.interior{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+.container_container{
+  display: flex;
+  column-count: 2;
+  justify-content: space-around, space-evenly, space-between;
+  
+}
+.items{
+  background-color: red;
+  height: 100px;
+  width: 450px;
+  margin: 10px 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+
+}
+.container{
+  text-align: center;
+}
+.second.textbox {
+  height: 100px;
+  width: 350px;
+  margin-bottom: 25px;
+  display: inline-block;
+  background: lightblue;
+}
+p{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="head" id="start">
+      Sample Header
+    </div>
+    <div class="second_container">
+      <div class="interior">
+        hello
+      </div>
+    </div>
+    <div class="container">
+      <div class ="container_container">
+        <div class="items">
+          First
+        </div>
+        <div class= "items">
+          Second
+        </div>
+      </div>
+      <div class="second textbox">
+        <p>
+          Third
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
